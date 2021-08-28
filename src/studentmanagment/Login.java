@@ -91,12 +91,22 @@ public class Login extends javax.swing.JFrame {
 
         cancelbtn.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         cancelbtn.setText("Cancel");
+        cancelbtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                cancelbtnActionPerformed(evt);
+            }
+        });
         jPanel1.add(cancelbtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(270, 200, -1, -1));
 
         signupbtn.setBackground(new java.awt.Color(204, 0, 0));
         signupbtn.setFont(new java.awt.Font("Tahoma", 1, 12)); // NOI18N
         signupbtn.setForeground(new java.awt.Color(255, 255, 255));
         signupbtn.setText("Signup");
+        signupbtn.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                signupbtnActionPerformed(evt);
+            }
+        });
         jPanel1.add(signupbtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(50, 200, -1, -1));
 
         getContentPane().add(jPanel1, new org.netbeans.lib.awtextra.AbsoluteConstraints(0, 0, 400, 270));
@@ -155,6 +165,15 @@ public class Login extends javax.swing.JFrame {
     private void pwordboxActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_pwordboxActionPerformed
         // TODO add your handling code here:
     }//GEN-LAST:event_pwordboxActionPerformed
+
+    private void signupbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_signupbtnActionPerformed
+        signup b = new signup();
+        b.setVisible(true);
+    }//GEN-LAST:event_signupbtnActionPerformed
+
+    private void cancelbtnActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_cancelbtnActionPerformed
+         this.hide();        // TODO add your handling code here:
+    }//GEN-LAST:event_cancelbtnActionPerformed
 
     /**
      * @param args the command line arguments

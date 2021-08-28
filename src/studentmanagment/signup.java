@@ -79,6 +79,11 @@ public class signup extends javax.swing.JFrame {
         jPanel1.add(addbtn, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 360, -1, -1));
 
         jButton3.setText("Cancel");
+        jButton3.addActionListener(new java.awt.event.ActionListener() {
+            public void actionPerformed(java.awt.event.ActionEvent evt) {
+                jButton3ActionPerformed(evt);
+            }
+        });
         jPanel1.add(jButton3, new org.netbeans.lib.awtextra.AbsoluteConstraints(250, 360, -1, -1));
         jPanel1.add(passwordbox, new org.netbeans.lib.awtextra.AbsoluteConstraints(140, 160, 140, -1));
 
@@ -155,6 +160,10 @@ public class signup extends javax.swing.JFrame {
          }
          
     }//GEN-LAST:event_addbtnActionPerformed
+
+    private void jButton3ActionPerformed(java.awt.event.ActionEvent evt) {//GEN-FIRST:event_jButton3ActionPerformed
+         this.hide();        // TODO add your handling code here:
+    }//GEN-LAST:event_jButton3ActionPerformed
 
     /**
      * @param args the command line arguments
